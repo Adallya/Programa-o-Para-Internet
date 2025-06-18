@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro Biblioteca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a31f61e6-f149-4ebe-8b35-63e27a7ef7ac.png" alt="Logo da Biblioteca" />
+    <h1>Biblioteca da Adállyazinha e da Lelety</h1>
+  </header>
+  <main>
+    <form>
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" name="titulo" placeholder="Título do livro" required />
+
+      <label for="isbn">ISBN</label>
+      <input type="text" id="isbn" name="isbn" placeholder="ISBN do livro" required />
+
+     <label for="autores">Autores:</label>
+<select class="autores" name="autores[]" unique>
+  <option value="autor1">Coolen Hooven</option>
+  <option value="autor2">William Shakespeare</option>
+  <option value="autor3">Machado de Asis</option>
+  <option value="autor4">Clarice Lispector</option>
+  <option value="autor5">Elayne Baeta</option>
+</select>
+<label for="outro-autor">Se o autor não está na lista, digite o nome:</label>
+      <input type="text" id="outro-autor" name="outro-autor" placeholder="Nome do autor" />
+
+      <label for="ano">Ano de Publicação</label>
+      <input type="number" id="ano" name="ano" placeholder="Ano de publicação" min="1000" max="9999" required />
+
+      <label for="editora">Editora</label>
+      <input type="text" id="editora" name="editora" placeholder="Nome da editora" required />
+    </form>
+     <button type="submit">Cadastrar</button>
+    <p class="description">
+      Faça seu cadastro e tenha acesso a milhares de livros. Siga nossas redes sociais para novidades!
+    </p>
+    <div class="social">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Twitter">Twitter</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+      <div class="social-logos" aria-label="Logos das redes sociais">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbedda54-040f-4d10-af6c-b1ee19debc37.png" alt="Logo do Facebook em azul" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/124a76a8-20a7-4670-b4e4-22444614f5c9.png" alt="Logo do Twitter em azul claro" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fffa65f-91b3-4afa-acb8-19229ddd3bd2.png" alt="Logo do Instagram em rosa vermelho" />
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/61d9b60f-8ec1-436b-bda8-179b5753d584.png" alt="Logo do LinkedIn em azul escuro" />
+    </div>
+  </main>
+  </main>
+  <footer>
+    <a href="#" aria-label="Sobre">Sobre</a>
+    <a href="#" aria-label="Aviso Legal">Aviso Legal</a>
+    <a href="#" aria-label="Termo de Uso">Termo de Uso</a>
+  </footer>
+</body>
+</html>
+
